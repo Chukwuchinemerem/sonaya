@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Booking Received — Sonaya Beauty Studio</title>
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          peach: { DEFAULT: '#F5DBD1', light: '#FCEEE7', pale: '#FFF9F6', deep: '#E3A796' },
+          espresso: { DEFAULT: '#2B1810', 2: '#3D2417', soft: '#5C3C2A' },
+          gold: { DEFAULT: '#C89355', light: '#E8C48C' },
+          wine: '#7A2E2C',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'Georgia', 'serif'],
+          body: ['Manrope', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232B1810'/%3E%3Ctext x='50' y='66' font-family='Georgia,serif' font-size='52' fill='%23C89355' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body class="font-body antialiased min-h-screen flex items-center justify-center px-5">
+
+<div class="max-w-lg w-full text-center py-16">
+  <div class="w-20 h-20 rounded-full bg-espresso flex items-center justify-center mx-auto mb-8">
+    <svg class="w-9 h-9 text-gold-light" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+  </div>
+  <p class="eyebrow justify-center inline-flex">Booking Received</p>
+  <h1 class="font-display text-4xl md:text-5xl text-espresso mt-5 leading-tight">Thank you, beautiful.</h1>
+  <p class="mt-5 text-espresso-soft text-lg leading-relaxed">
+    Your appointment request has been sent to Sonaya Beauty Studio. Maryann will confirm your slot
+    by email or WhatsApp shortly — keep an eye on your inbox and messages.
+  </p>
+
+  <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+    <a href="index.html" class="btn-gold px-8 py-3.5 rounded-full">Back to Homepage</a>
+    <a href="https://wa.me/2347013608697?text=Hi%20Sonaya%20Beauty%20Studio!%20I%20just%20submitted%20a%20booking%20form%20and%20wanted%20to%20follow%20up." target="_blank" rel="noopener noreferrer" class="btn-outline px-8 py-3.5 rounded-full">Message on WhatsApp</a>
+  </div>
+</div>
+
+</body>
+</html>

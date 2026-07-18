@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Book Your Appointment — Sonaya Beauty Studio</title>
+<meta name="description" content="Book your lash extension or brow appointment with Sonaya Beauty Studio. Choose your service, pick a date and time, and secure your slot." />
+<meta name="theme-color" content="#F5DBD1" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          peach: { DEFAULT: '#F5DBD1', light: '#FCEEE7', pale: '#FFF9F6', deep: '#E3A796' },
+          espresso: { DEFAULT: '#2B1810', 2: '#3D2417', soft: '#5C3C2A' },
+          gold: { DEFAULT: '#C89355', light: '#E8C48C' },
+          wine: '#7A2E2C',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'Georgia', 'serif'],
+          body: ['Manrope', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232B1810'/%3E%3Ctext x='50' y='66' font-family='Georgia,serif' font-size='52' fill='%23C89355' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body class="font-body antialiased">
+
+<div class="grain-overlay"></div>
+
+<!-- =========================================================
+     NAVBAR
+========================================================== -->
+<header id="site-nav">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3 shrink-0">
+        <span class="w-11 h-11 rounded-full bg-espresso flex items-center justify-center">
+          <span class="font-display text-gold-light text-xl">S</span>
+        </span>
+        <span class="font-display text-lg md:text-xl tracking-wide text-espresso leading-none">
+          Sonaya <span class="italic font-normal text-espresso-soft">Beauty Studio</span>
+        </span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9">
+        <a href="index.html#gallery" class="nav-link">Gallery</a>
+        <a href="index.html#ceo" class="nav-link">About</a>
+        <a href="index.html#testimonials" class="nav-link">Reviews</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="tel:+2347013608697" class="text-sm font-semibold text-espresso-soft hover:text-espresso transition">+234 701 360 8697</a>
+        <a href="index.html" class="btn-outline px-6 py-2.5 rounded-full text-sm">← Back to Site</a>
+      </div>
+
+      <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" class="lg:hidden w-10 h-10 flex items-center justify-center text-espresso">
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" /></svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden">
+      <div class="flex flex-col gap-1 pb-6 pt-2 border-t border-espresso/10">
+        <a href="index.html#gallery" class="py-3 font-semibold text-espresso">Gallery</a>
+        <a href="index.html#ceo" class="py-3 font-semibold text-espresso">About</a>
+        <a href="index.html#testimonials" class="py-3 font-semibold text-espresso">Reviews</a>
+        <a href="index.html#contact" class="py-3 font-semibold text-espresso">Contact</a>
+        <a href="index.html" class="btn-outline text-center px-6 py-3 rounded-full text-sm mt-3">← Back to Site</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     PAGE HEADER
+========================================================== -->
+<section class="pt-32 pb-14 md:pt-40 md:pb-16">
+  <div class="max-w-3xl mx-auto px-5 text-center observe">
+    <p class="eyebrow justify-center inline-flex">Sonaya Beauty Studio</p>
+    <h1 class="font-display text-4xl md:text-6xl text-espresso mt-5 leading-tight">Book Your <span class="italic text-wine">Appointment</span></h1>
+    <p class="mt-5 text-espresso-soft text-lg">Pick your service, choose a date and time, and secure your slot in a few minutes.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     PAYMENT & BOOKING POLICY
+========================================================== -->
+<section class="pb-16 md:pb-20">
+  <div class="max-w-3xl mx-auto px-5 observe">
+    <div class="policy-card p-7 md:p-9">
+      <p class="eyebrow">Please Read Before Booking</p>
+      <h2 class="font-display text-2xl md:text-3xl text-espresso mt-3">Payment &amp; Booking Policy</h2>
+
+      <ul class="mt-6 space-y-3 text-espresso-soft leading-relaxed">
+        <li>Full payment is required at the time of booking to secure and confirm your appointment slot.</li>
+        <li>Appointments are booked on a first-paid, first-served basis — an unpaid form does not guarantee your slot.</li>
+        <li>Please arrive on time; late arrivals of more than 15 minutes may need to be rescheduled depending on the day's bookings.</li>
+        <li>Reschedule requests are welcome with at least 24 hours' notice, subject to availability.</li>
+        <li>Selfie and reference photos are used only to prepare for and personalise your service.</li>
+      </ul>
+
+      <div class="no-refund-badge rounded-lg px-5 py-4 mt-6">
+        <p class="font-bold text-sm uppercase tracking-wide">No Refund Policy</p>
+        <p class="text-sm mt-1 leading-relaxed">All payments made to Sonaya Beauty Studio are strictly <strong>non-refundable</strong>, including in the case of cancellations, no-shows, or a change of mind. Please book only when you are certain of your date and service.</p>
+      </div>
+
+      <p class="text-xs text-espresso-soft/70 mt-5">
+        By completing the form below and submitting a booking, you confirm that you have read, understood, and agree to this policy.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     BOOKING FORM
+========================================================== -->
+<section class="pb-28">
+  <div id="booking-form-top" class="max-w-3xl mx-auto px-5">
+
+    <!-- Draft resume banner -->
+    <div id="draft-banner" class="draft-banner hidden flex flex-wrap items-center justify-between gap-3 px-6 py-4 mb-8">
+      <p class="text-sm">You have a saved draft from <span id="draft-saved-at" class="font-semibold"></span>.</p>
+      <div class="flex gap-3">
+        <button type="button" id="resume-draft" class="text-xs font-bold uppercase tracking-wide bg-gold text-espresso px-4 py-2 rounded-full">Resume</button>
+        <button type="button" id="discard-draft" class="text-xs font-bold uppercase tracking-wide border border-peach-light/40 text-peach-light px-4 py-2 rounded-full">Discard</button>
+      </div>
+    </div>
+
+    <!-- Progress -->
+    <div class="flex items-center gap-3 mb-10 observe">
+      <div id="dot-1" class="step-dot active">1</div>
+      <div class="step-line"><div id="line-fill-1" class="fill"></div></div>
+      <div id="dot-2" class="step-dot">2</div>
+      <div class="step-line"><div id="line-fill-2" class="fill"></div></div>
+      <div id="dot-3" class="step-dot">3</div>
+    </div>
+    <div class="flex justify-between text-[11px] uppercase tracking-widest text-espresso-soft/70 -mt-8 mb-10 px-1">
+      <span>Your Details</span>
+      <span>Appointment</span>
+      <span>Confirm &amp; Pay</span>
+    </div>
+
+    <div id="form-message" class="hidden bg-wine text-white text-sm px-5 py-3 rounded-lg mb-6"></div>
+
+    <form id="booking-form" class="form-panel p-6 md:p-10 observe" action="https://formsubmit.co/ajax/ozoemenammeso3@gmail.com" method="POST" enctype="multipart/form-data" accept-charset="UTF-8">
+
+      <!-- FormSubmit configuration -->
+      <input type="hidden" name="_subject" value="New Booking Request — Sonaya Beauty Studio">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://sonaya-beauty.onrender.com/thank-you.html">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" id="hidden-service-name" name="Service Selected" value="">
+      <input type="hidden" id="hidden-service-amount" name="Amount (NGN)" value="">
+
+      <!-- ============ STEP 1 — Your Details ============ -->
+      <div id="step-panel-1" class="step-panel active">
+        <p class="eyebrow">Step 1</p>
+        <h3 class="font-display text-2xl md:text-3xl text-espresso mt-3 mb-7">Your Details &amp; Service</h3>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="field-label" for="field-name">Full Name</label>
+            <input id="field-name" name="Full Name" type="text" required class="field-input" placeholder="e.g. Amara Okafor" />
+          </div>
+          <div>
+            <label class="field-label" for="field-phone">Phone Number</label>
+            <input id="field-phone" name="Phone Number" type="tel" required class="field-input" placeholder="e.g. 0803 123 4567" />
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <label class="field-label" for="field-email">Email Address</label>
+          <input id="field-email" name="Email Address" type="email" required class="field-input" placeholder="you@example.com" />
+        </div>
+
+        <div class="mt-5">
+          <label class="field-label" for="service-select">Choose Your Service</label>
+          <select id="service-select" required class="field-select">
+            <option value="" disabled selected>Select a lash or brow service…</option>
+          </select>
+        </div>
+
+        <!-- Live service preview -->
+        <div id="service-preview" class="service-preview sm:grid-cols-2 mt-6">
+          <div class="h-52 sm:h-full">
+            <img id="preview-img" src="" alt="" class="w-full h-full object-cover" />
+          </div>
+          <div class="p-6">
+            <span id="preview-category" class="chip"></span>
+            <div class="flex items-baseline justify-between mt-3 gap-3">
+              <h4 id="preview-name" class="font-display text-2xl text-espresso"></h4>
+              <span id="preview-price" class="font-display text-xl text-wine whitespace-nowrap"></span>
+            </div>
+            <p id="preview-desc" class="text-sm text-espresso-soft mt-3 leading-relaxed"></p>
+          </div>
+        </div>
+
+        <div class="flex justify-end mt-9">
+          <button type="button" id="to-step-2" class="btn-gold px-8 py-3.5 rounded-full">Next →</button>
+        </div>
+      </div>
+
+      <!-- ============ STEP 2 — Appointment Details ============ -->
+      <div id="step-panel-2" class="step-panel">
+        <p class="eyebrow">Step 2</p>
+        <h3 class="font-display text-2xl md:text-3xl text-espresso mt-3 mb-7">Appointment Details</h3>
+
+        <label class="field-label">Upload Your Selfie <span class="font-normal normal-case text-espresso-soft/60">(optional — helps us prep your look)</span></label>
+        <div id="selfie-zone" class="dropzone mb-6">
+          <img id="selfie-preview" class="dropzone-preview" alt="Selfie preview" />
+          <svg class="w-6 h-6 mx-auto mb-2 text-gold" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 7.5L12 3m0 0L7.5 7.5M12 3v13.5" /></svg>
+          <p id="selfie-label" class="text-sm text-espresso-soft">Click or drag a photo here to upload</p>
+          <input id="selfie-input" name="Selfie Upload" type="file" accept="image/*" />
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="field-label" for="date-select">Preferred Date</label>
+            <select id="date-select" name="Preferred Date" required class="field-select">
+              <option value="" disabled selected>Select a date…</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="time-select">Preferred Time</label>
+            <select id="time-select" name="Preferred Time" required class="field-select">
+              <option value="" disabled selected>Select a time…</option>
+            </select>
+          </div>
+        </div>
+
+        <label class="field-label mt-6 block">Add Another Image <span class="font-normal normal-case text-espresso-soft/60">(optional — inspiration photo or previous work)</span></label>
+        <div id="ref-zone" class="dropzone mb-6">
+          <img id="ref-preview" class="dropzone-preview" alt="Reference image preview" />
+          <svg class="w-6 h-6 mx-auto mb-2 text-gold" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 7.5L12 3m0 0L7.5 7.5M12 3v13.5" /></svg>
+          <p id="ref-label" class="text-sm text-espresso-soft">Click or drag an image here to upload</p>
+          <input id="ref-input" name="Reference Image" type="file" accept="image/*" />
+        </div>
+
+        <div>
+          <label class="field-label" for="field-requests">Special Requests</label>
+          <textarea id="field-requests" name="Special Requests" class="field-textarea" placeholder="Allergies, preferred style notes, accessibility needs, anything else we should know…"></textarea>
+        </div>
+
+        <div class="flex justify-between mt-9">
+          <button type="button" id="back-to-step-1" class="btn-outline px-8 py-3.5 rounded-full">← Back</button>
+          <button type="button" id="to-step-3" class="btn-gold px-8 py-3.5 rounded-full">Next →</button>
+        </div>
+      </div>
+
+      <!-- ============ STEP 3 — Confirm & Pay ============ -->
+      <div id="step-panel-3" class="step-panel">
+        <p class="eyebrow">Step 3</p>
+        <h3 class="font-display text-2xl md:text-3xl text-espresso mt-3 mb-7">Confirm &amp; Pay</h3>
+
+        <div id="booking-summary" class="bg-peach-light rounded-lg px-5 py-2 mb-8 text-sm"></div>
+
+        <label class="field-label">Payment Option</label>
+        <label class="radio-card mb-6">
+          <input type="radio" name="Payment Option" value="Pay in Full" checked class="mt-1" />
+          <span>
+            <span class="block font-bold text-espresso">Pay in Full</span>
+            <span class="block text-sm text-espresso-soft mt-0.5">Full payment secures your appointment slot immediately.</span>
+          </span>
+        </label>
+
+        <div id="bank-details" class="bg-espresso text-peach-light rounded-lg p-6 mb-8">
+          <p class="eyebrow">Transfer To</p>
+          <div class="mt-4 space-y-2 text-lg">
+            <p><span class="text-peach-light/60 text-sm block">Bank</span>PalmPay</p>
+            <p><span class="text-peach-light/60 text-sm block">Account Number</span>8135547873</p>
+            <p><span class="text-peach-light/60 text-sm block">Account Name</span>Ozoemena Maryann Mmesoma</p>
+          </div>
+          <button type="button" id="copy-account" class="copy-btn mt-5 text-xs font-bold uppercase tracking-wide bg-gold text-espresso px-4 py-2.5 rounded-full">Copy Account Number</button>
+          <p class="text-xs text-peach-light/60 mt-4 leading-relaxed">Please make your transfer and keep your receipt. Payments are non-refundable — see the policy above.</p>
+        </div>
+
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input type="checkbox" id="policy-agree" name="Policy Agreed" value="Yes" class="mt-1 w-4 h-4 accent-[#C89355]" />
+          <span class="text-sm text-espresso-soft">I have read and agree to the Payment &amp; Booking Policy above, including the no-refund policy.</span>
+        </label>
+
+        <div class="flex flex-wrap justify-between gap-4 mt-9">
+          <button type="button" id="back-to-step-2" class="btn-outline px-8 py-3.5 rounded-full">← Back</button>
+          <div class="flex gap-3">
+            <button type="button" id="save-draft" class="btn-outline px-6 py-3.5 rounded-full">Save as Draft</button>
+            <button type="submit" id="submit-booking" class="btn-gold px-8 py-3.5 rounded-full">Submit Booking</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    <p class="text-center text-xs text-espresso-soft/60 mt-8 max-w-lg mx-auto leading-relaxed">
+      Your details are sent privately and directly to Sonaya Beauty Studio. Prefer WhatsApp instead?
+      <a href="#" data-book-general class="underline text-wine">Message us here</a>.
+    </p>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER (simplified)
+========================================================== -->
+<footer class="bg-espresso-2 text-peach-light pt-14 pb-8">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-8 border-b border-peach-light/10">
+      <div class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded-full bg-gold flex items-center justify-center">
+          <span class="font-display text-espresso text-lg">S</span>
+        </span>
+        <span class="font-display text-lg text-peach-light">Sonaya <span class="italic font-normal text-peach-light/70">Beauty Studio</span></span>
+      </div>
+      <div class="flex items-center gap-6 text-sm text-peach-light/70">
+        <a href="tel:+2347013608697" class="hover:text-peach-light transition">+234 701 360 8697</a>
+        <a href="mailto:ozoemenammeso3@gmail.com" class="hover:text-peach-light transition">ozoemenammeso3@gmail.com</a>
+      </div>
+    </div>
+    <p class="pt-6 text-center text-xs text-peach-light/45">© <span id="year"></span> Sonaya Beauty Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="#" id="wa-float" data-book-general aria-label="Chat on WhatsApp">
+  <svg class="w-7 h-7 text-peach-light" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5.1-1.3A10 10 0 1012 2zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.8.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+<script src="js/book.js"></script>
+</body>
+</html>
