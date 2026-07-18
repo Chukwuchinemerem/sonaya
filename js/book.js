@@ -337,24 +337,13 @@
       return;
     }
 
-    e.preventDefault();
-
-    const form = e.currentTarget;
     const emailField = document.getElementById('field-email');
     if (emailField?.value) {
       const replyToField = document.querySelector('input[name="_replyto"]');
       if (replyToField) replyToField.value = emailField.value;
     }
 
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Submitting...';
-    submitBtn.classList.add('opacity-70');
-
     localStorage.removeItem('sonaya_draft_booking');
-
-    window.setTimeout(() => {
-      form.submit();
-    }, 50);
   });
 
   /* ---------------------------------------------------------------------
