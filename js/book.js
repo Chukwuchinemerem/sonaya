@@ -337,6 +337,12 @@
       return;
     }
 
+    const emailField = document.getElementById('field-email');
+    if (emailField?.value) {
+      const replyToField = document.querySelector('input[name="_replyto"]');
+      if (replyToField) replyToField.value = emailField.value;
+    }
+
     localStorage.removeItem('sonaya_draft_booking');
   });
 
